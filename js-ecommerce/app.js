@@ -15,7 +15,7 @@ const ajaxResult = {
       "sys": { "id": "2" },
       "fields": {
         "title": "king panel bed",
-        "price": 12.99,
+        "price": 1012.99,
         "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
       }
     },
@@ -23,7 +23,7 @@ const ajaxResult = {
       "sys": { "id": "3" },
       "fields": {
         "title": "single panel bed",
-        "price": 12.99,
+        "price": 1200.99,
         "image": { "fields": { "file": { "url": "./images/product-3.jpeg" } } }
       }
     },
@@ -31,7 +31,7 @@ const ajaxResult = {
       "sys": { "id": "4" },
       "fields": {
         "title": "twin panel bed",
-        "price": 22.99,
+        "price": 999.99,
         "image": { "fields": { "file": { "url": "./images/product-4.jpeg" } } }
       }
     },
@@ -39,7 +39,7 @@ const ajaxResult = {
       "sys": { "id": "5" },
       "fields": {
         "title": "fridge",
-        "price": 88.99,
+        "price": 799.99,
         "image": { "fields": { "file": { "url": "./images/product-5.jpeg" } } }
       }
     },
@@ -47,7 +47,7 @@ const ajaxResult = {
       "sys": { "id": "6" },
       "fields": {
         "title": "dresser",
-        "price": 32.99,
+        "price": 599.99,
         "image": { "fields": { "file": { "url": "./images/product-6.jpeg" } } }
       }
     },
@@ -55,7 +55,7 @@ const ajaxResult = {
       "sys": { "id": "7" },
       "fields": {
         "title": "couch",
-        "price": 45.99,
+        "price": 399.99,
         "image": { "fields": { "file": { "url": "./images/product-7.jpeg" } } }
       }
     },
@@ -63,7 +63,7 @@ const ajaxResult = {
       "sys": { "id": "8" },
       "fields": {
         "title": "table",
-        "price": 33.99,
+        "price": 239.99,
         "image": { "fields": { "file": { "url": "./images/product-8.jpeg" } } }
       }
     }
@@ -129,7 +129,7 @@ class UI{
 						</button>
 					</div>
 					<h3>${product.title}</h3>
-					<h4>$${product.price}</h4>
+					<h4>GHC ${product.price}</h4>
 				</article>
 				<!-- end of single product -->
 			`;
@@ -194,7 +194,7 @@ class UI{
 
 			<div>
 				<h4>${item.title}</h4>
-				<h5>$${item.price}</h5>
+				<h5>GHC ${item.price}</h5>
 				<span class="remove-item" data-id=${item.id}>
 					Remove
 				</span>
