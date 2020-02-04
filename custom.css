@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Galada|Lobster|Lobster+Two|Orbitron|Parisienne|Playball|Russo+One|Volkhov&display=swap');
+
+/*
+font-family: 'Orbitron', sans-serif;
+font-family: 'Volkhov', serif;
+font-family: 'Russo One', sans-serif;
+font-family: 'Playball', cursive;
+font-family: 'Galada', cursive;
+font-family: 'Parisienne', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Lobster Two', cursive;
+*/
+
+.wrapper{
+	display: grid;
+	grid-template-rows: 1fr 0.8fr 1fr 1fr 1fr 1fr
+	grid-auto-columns: minmax(100px, auto);
+}
+.landing-page{
+	display: grid;
+	grid-template-rows: 0.2fr 1fr;
+
+	background-image: url("img/runner.jpg");
+	background-size: 100vw 100vh;
+	background-repeat: no-repeat;
+	height: 100vh;
+	position: relative;
+	padding: 5px;
+}
+.overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #003;
+	opacity: 0.7;
+}
+.navigation{
+	position: fixed;
+	width: 100%;
+	padding-top: 10px;
+	display: grid;
+	grid-template-columns: 0.3fr 1fr 0.3fr;
+	justify-items: center;
+	z-index: 100;
+}
+.logo > a{
+	color: aliceblue;
+	font-family: 'Lobster Two', cursive;
+	font-weight: bolder;
+	font-size: 1.5em;
+	position: relative;
+}
+.logo > a:hover{
+	text-decoration: none;
+}
+.nav-list{
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	justify-items: center;
+	grid-gap: 1em;
+
+	font-family: 'Lobster', cursive;
+	font-weight: bolder;
+	font-size: 1.5em;
+}
+.hidden-nav-list{
+	position: absolute;
+	list-style: none;
+	display: grid;
+	grid-template-rows: repeat(5, 1fr);
+
+	top: 90;
+	padding: 8px 0 0 0;
+}
+.hidden-nav-list > a{
+	position: relative;
+	right: -95px;
+	border: 1px solid aliceblue;
+	border-radius: 10px;
+	color: aliceblue;
+	font-family: 'Lobster', cursive;
+	padding: 10px;
+}
+.hidden-nav-list > a:hover{
+	text-decoration: none;
+	background-color: aliceblue;
+	color: #000;
+}
+.links > ul > li > a{
+	border: 1px solid aliceblue;
+	border-radius: 10px;
+	color: aliceblue;
+	padding: 10px;
+}
+.bars{
+	display: none;
+}
+.bars > a{
+	border: 1px solid aliceblue;
+	border-radius: 10px;
+	color: aliceblue;
+	padding: 10px;
+	font-size: 2em;
+}
+.links > ul > li > a:hover,
+.bars > a:hover{
+	text-decoration: none;
+	background-color: aliceblue;
+	color: #000;
+}
+.whoami{
+	z-index: 10;
+	align-self: center;
+	text-align: center;
+	color: aliceblue;
+	font-family: 'Orbitron', sans-serif;
+	font-weight: bolder;
+	margin: 45vh 0;
+}
+.services{
+	padding: 40px 0px;
+	background: #900;
+}
+.service-section, 
+#abt-heading,
+#portfolio-heading{
+	padding: 0px 0px 0px 8%;
+}
+.webdev,
+.programmer,
+.statistician{
+	text-align: center;
+	margin: 20px 0px;
+	padding: 20px 0px;
+}
+.webdev a,
+.programmer a,
+.statistician a{
+	color: #003;
+}
+.webdev a:hover,
+.programmer a:hover,
+.statistician a:hover{
+	text-decoration: none;
+	color: #009;
+}
+.about{
+	background-color: #300;
+	padding: 5% 0%;
+	font-family: 'Russo One', sans-serif;
+	font-size: 1.5em;
+	color: aliceblue;
+}
+.image-div{
+	z-index: 0;
+	padding: 0 0 0 8%;
+}
+.image-div > img{	
+	border-radius: 50%;
+}
+.text-div{
+
+}
+.skills-div > h6{
+	text-align: center;
+	margin: 5px;
+}
+.skills-div > ul{
+	color: skyblue;
+	font-family: 'Galada', cursive;
+}
+.portfolio{
+	background-image: url("img/room.jpg");
+	background-repeat: no-repeat;
+	padding: 40px 0 40px 8%;
+	color: skyblue;
+}
+#portfolio-heading{
+	color: aliceblue;
+}
+.travelgh{
+	background-image: url(img/portfolio-pics/travelGH.PNG);
+	background-position: fixed;
+	background-size: cover;
+	border: 2px solid #300;
+	border-radius: 10px;
+	height: 250px;
+	margin: 30px 0px;
+	position: relative;
+	font-family: 'Russo One', sans-serif;
+}
+.project-desc{
+	background-color: #000;
+	text-align: center;
+	position: absolute;
+	padding: 10px;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	border-radius: 10px;
+}
+.project-title{
+	background-color: #000;
+	text-align: center;
+	position: absolute;
+	padding: 10px;
+	left: 0px;
+	width: 100%;
+}
+.project-desc:hover,
+.project-title:hover{
+	opacity: 0.7;
+}
+.contact{
+	color: darkgreen;
+	background-color: aliceblue;
+	height: 250px;
+	text-align: center;
+	padding: 40px 0 0 8%;
+}
+.my-email{
+	color: darkred;
+}
+.my-email:hover{
+	text-decoration: none;
+	color: red;
+}
+.contact p{
+	font-size: 1.5em;
+}
+.social-media-icons{
+	margin: 10px;
+}
+.footer-div{
+	background-color: #333;
+	color: aliceblue;
+	padding: 40px 0 40px 8%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********Media queries********/
+@media screen and (max-width: 768px) {
+  .bars{
+  	display: block;
+  }
+  .links ul{
+  	display: none;
+  }
+}
+
+
