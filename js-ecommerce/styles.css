@@ -8,6 +8,9 @@
   --mainSpacing: 0.1rem;
   --mainTransition: all 0.3s linear;
 }
+html{
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -61,6 +64,7 @@ body {
   color: var(--mainWhite);
 }
 /* --------------- End of Navbar ---------------- */
+
 /* --------------- Hero ---------------- */
 .hero {
   min-height: calc(100vh - 60px);
@@ -102,6 +106,7 @@ body {
   border: 1px solid var(--primaryColor);
   transition: var(--mainTransition);
   cursor: pointer;
+  text-decoration: none;
 }
 .checkout-btn:hover,
 .banner-btn:hover {
@@ -109,6 +114,7 @@ body {
   color: var(--primaryColor);
 }
 /* --------------- End of Hero ---------------- */
+
 /* --------------- Products ---------------- */
 
 .products {
@@ -183,6 +189,7 @@ body {
 }
 
 /* ---------------End of Products ---------------- */
+
 /* --------------- Cart ---------------- */
 .cart-overlay {
   position: fixed;
