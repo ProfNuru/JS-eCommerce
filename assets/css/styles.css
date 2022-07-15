@@ -7,6 +7,7 @@
 
     /* ============== Colors ============== */
     /*
+        THEME: hsl(first-hue, sat, lig)
         Purple: hsl(250,66%,75%);
         Blue: hsl(207,90%,72%);
         Pink: hsl(356,66%,75%);
@@ -18,7 +19,7 @@
     --second-hue:219;
 
     --first-color:hsl(var(--first-hue), var(--sat), var(--lig));
-    --first-color-alt:hsl(var(--first-hue), var(--sat), 71%);
+    --first-color-alt:hsl(var(--first-hue), var(--sat), 71%);/*--lig - 4*/
     --title-color:hsl(var(--second-hue),15%,95%);
     --text-color:hsl(var(--second-hue),8%,75%);
     --text-color-light:hsl(var(--second-hue),4%,55%);
